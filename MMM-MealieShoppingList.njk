@@ -1,0 +1,13 @@
+{% if error %}
+    <div class="light xsmall">Error</div>
+{% elif loading %}
+    <div class="dimmed light small">Loading...</div>
+{% endif %}
+
+{% if not loading %}
+    <ul>
+        {% for item in items %}
+            <li>{{ item.display }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
