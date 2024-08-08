@@ -1,20 +1,10 @@
 # MMM-MealieShoppingList
 
-[![GitHub issues][issues-shield]](https://github.com/btoconnor/MMM-MealieShoppingList/issues)
-[![GitHub pull requests][pull-requests-shield]](https://github.com/btoconnor/MMM-MealieShoppingList/pulls)
-[![GitHub forks][forks-shield]](https://github.com/btoconnor/MMM-MealieShoppingList/network)
-[![GitHub stars][stars-shield]](https://github.com/btoconnor/MMM-MealieShoppingList/stargazers)
-[![License][license-shield]](https://github.com/btoconnor/MMM-MealieShoppingList/blob/master/LICENSE)
-
-[![Build status][build-status-shield]](https://github.com/btoconnor/MMM-MealieShoppingList/actions/workflows/automated-tests.yaml)
-[![Last commit][last-commit-shield]](https://github.com/btoconnor/MMM-MealieShoppingList/commits/main)
-[![Commits][commits-shield]](https://github.com/btoconnor/MMM-MealieShoppingList/commits/main)
-
-**MMM-MealieShoppingList is a module for [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror) that displays your [Mealie][https://mealie.io] meal plan for the week.**
+**MMM-MealieShoppingList is a module for [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror) that displays your [Mealie](https://mealie.io) meal plan for the week.**
 
 ## Description
 
-This module shows your shopping list from [Mealie][https://mealie.io].
+This module shows your shopping list from [Mealie](https://mealie.io).
 
 Mealie is an intuitive and easy to use recipe management app. It's designed to make your life easier by being the best recipes management experience on the web and providing you with an easy to use interface to manage your growing collection of recipes.
 
