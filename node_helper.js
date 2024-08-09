@@ -29,7 +29,7 @@ module.exports = NodeHelper.create({
     },
 
     getShoppingListItems(payload) {
-        const url = new URL(`${payload.host}/api/groups/shopping/lists/${payload.shoppingListID}?queryFilter=checked%3Dfalse`);
+        const url = new URL(`${payload.host}/api/groups/shopping/lists/${payload.shoppingListID}`);
 
         fetch(url, {
             method: "GET",
@@ -41,13 +41,14 @@ module.exports = NodeHelper.create({
             .then((response) => response.json())
             .then((data) => {
                 const items = data.listItems
+                    .filter(item => item.checked === false)
                     .map((item) => {
-                    return {
-                        display: item.display,
-                        quantity: item.quantity,
-                        unit: item.unit
-                    }
-                });
+                        return {
+                            display: item.display,
+                            quantity: item.quantity,
+                            unit: item.unit
+                        }
+                    });
 
                 this.sendSocketNotification("MEALIE_SHOPPING_LIST_DATA", {
                     identifier: payload.identifier,

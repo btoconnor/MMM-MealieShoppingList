@@ -5,9 +5,13 @@
 {% endif %}
 
 {% if not loading %}
-    <ul>
-        {% for item in items %}
-            <li>{{ item.display }}</li>
-        {% endfor %}
-    </ul>
+    {% if items.length > 0 %}
+        <ul>
+            {% for item in items %}
+                <li>{{ item.display }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <div class="empty-list">No entries.</div>
+    {% endif %}
 {% endif %}
