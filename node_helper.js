@@ -29,7 +29,7 @@ module.exports = NodeHelper.create({
     },
 
     getShoppingListItems(payload) {
-        const url = new URL(`${payload.host}/api/groups/shopping/lists/${payload.shoppingListID}`);
+        const url = new URL(`${payload.host}/api/households/shopping/lists/${payload.shoppingListID}`);
 
         fetch(url, {
             method: "GET",
