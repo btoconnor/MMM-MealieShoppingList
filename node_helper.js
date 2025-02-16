@@ -43,10 +43,18 @@ module.exports = NodeHelper.create({
                 const items = data.listItems
                     .filter(item => item.checked === false)
                     .map((item) => {
-                        return {
-                            display: item.display,
-                            quantity: item.quantity,
-                            unit: item.unit
+                        if (item.food === null) {
+                            return {
+                                display: item.note.trim(),
+                                quantity: item.quantity,
+                                unit: item.unit
+                            }
+                        } else {
+                            return {
+                                display: item.food.name,
+                                quantity: item.quantity,
+                                unit: item.unit
+                            }
                         }
                     });
 
